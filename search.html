@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-        <style>
-            a{
-                float:right;
-                margin-left: 5px;
-                padding: 3px;
-            }
-        </style>
-    </head>
-    <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-        <a href="image_search.html">Image Search</a>
-        <a href="advanced_search.html">Advanced Search</a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        #search{
+            border-radius: 30px;
+            height: 40px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 36%;
+        }
+        #submit1{
+            position: absolute;
+            top: 60%;
+            left: 39%;
+        }
+        #submit2{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+        }
+        input{
+            height: 30px;
+            width: 150px;
+            border-radius: 5px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: paleturquoise;
+        }
+        img{
+            height: 150px;
+            position: absolute;
+            top: 28%;
+            left: 37.5%;
+        }
+        a{
+            float:right;
+            margin-left: 5px;
+            padding: 10px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <img src="google_logo.png" alt="google logo">
+    <form action="https://www.google.com/search">
+        <input id="search" type="text" name="q">
+        <input id="submit1" type="submit" value="Google Search">
+        <input id="submit2" type="submit" value="I'm Feeling Lucky">
+    </form>
+    <a href="image_search.html">Images Search</a>
+    <a href="advanced_search.html">Advanced Search</a>
+</body>
 </html>
