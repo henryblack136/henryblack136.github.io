@@ -6,6 +6,7 @@
     <title>Advanced Search</title>
     <style>
         .search{
+            color: darkgrey;
             background-color: rgba(32, 33, 36, 1);
             border: solid 1px;
             border-color: gray;
@@ -43,6 +44,26 @@
             left: 41.25%;
             border-radius: 5px;
         }
+        #help1{
+            position: absolute;
+            top: 28%;
+            left: 55%;
+        }
+        #help2{
+            position: absolute;
+            top: 36%;
+            left: 55%;
+        }
+        #help3{
+            position: absolute;
+            top: 44%;
+            left: 55%;
+        }
+        #help4{
+            position: absolute;
+            top: 52%;
+            left: 55%;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgba(32, 33, 36, 1);
@@ -55,6 +76,12 @@
             color: darkgray;
             padding-left: 25px;
         }
+        h4{
+            color: darkgray;
+            position: absolute;
+            top: 19%;
+            left: 53%;
+        }
         h5{
             color: gray;
             padding: 10px;
@@ -62,7 +89,24 @@
         }
         img{
             height: 50px;
-            
+            float: left;
+        }
+        div{
+            font-size: smaller;
+            color: gray;
+        }
+        span{
+            font-family: monospace;
+            color: darkgray;
+        }
+        .links{
+            float: right;
+            margin-left: 5px;
+            padding: 10px;
+            padding-top: 20px;
+            padding-right: 20px;
+            color: darkgray;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -71,6 +115,9 @@
         <a href="search.html">
             <img src="google_logo.png" alt="google logo">
         </a>
+        <a class="links" href="search.html">Regular Search</a>
+        <a class="links" href="image_search.html">Image Search</a>
+        <br><br><br>
         <h2>Advanced Search</h2>
         <hr color="black">
     </header>
@@ -80,11 +127,16 @@
     <h5>any of these words: </h5>
     <h5>non of these words: </h5>
     <form action="https://www.google.com/search">
-        <input class="search" id="search1" type="text" name="q">
-        <input class="search" id="search2" type="text" name="q">
-        <input class="search" id="search3" type="text" name="q">
-        <input class="search" id="search4" type="text" name="q">
+        <input class="search" id="search1" type="text" name="as_q">
+        <input class="search" id="search2" type="text" name="as_epq">
+        <input class="search" id="search3" type="text" name="as_oq">
+        <input class="search" id="search4" type="text" name="as_eq">
         <input id="submit1" type="submit" value="Advanced Search">
     </form>
+    <h4>To do this in the search box.</h4>
+    <div id="help1">Type the important words: <span>tri-colour rat terrier</span></div>
+    <div id="help2">Put exact words in quotes: <span>"rat terrier"</span></div>
+    <div id="help3">Type OR between the words you want: <span>miniature OR standard</span></div>
+    <div id="help4">Put a minus sign just before words that you don't want: <span>-rodent, -"Jack Russell"</span></div>
 </body>
 </html>
