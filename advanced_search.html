@@ -5,47 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Search</title>
     <style>
-        #search{
-            border-radius: 30px;
-            height: 40px;
-            width: 400px;
-            position: absolute;
-            top: 50%;
-            left: 36%;
-        }
-        #submit{
+        .search{
+            background-color: rgba(32, 33, 36, 1);
+            border: solid 1px;
+            border-color: gray;
+            border-radius: 2px;
             height: 30px;
+            width: 500px;
+            position: absolute;
+        }
+        #search1{
+            position: absolute;
+            top: 27%;
+            left: 18%;
+        }
+        #search2{
+            position: absolute;
+            top: 35%;
+            left: 18%;
+        }
+        #search3{
+            position: absolute;
+            top: 43%;
+            left: 18%;
+        }
+        #search4{
+            position: absolute;
+            top: 51%;
+            left: 18%;
+        }
+        #submit1{
+            background-color: cornflowerblue;
+            height: 38px;
             width: 150px;
             position: absolute;
             top: 60%;
-            left: 44%;
+            left: 41.25%;
             border-radius: 5px;
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: palevioletred;
+            background-color: rgba(32, 33, 36, 1);
+        }
+        h2{
+            color: rgb(193, 45, 45);
+            padding-left: 25px;
+        }
+        h3{
+            color: darkgray;
+            padding-left: 25px;
+        }
+        h5{
+            color: gray;
+            padding: 10px;
+            padding-left: 25px;
         }
         img{
-            height: 150px;
-            position: absolute;
-            top: 28%;
-            left: 37.5%;
-        }
-        a{
-            float:right;
-            margin-left: 5px;
-            padding: 10px;
-            color: whitesmoke;
+            height: 50px;
+            
         }
     </style>
 </head>
 <body>
-    <img src="google_logo.png" alt="google logo">
+    <header>
+        <a href="search.html">
+            <img src="google_logo.png" alt="google logo">
+        </a>
+        <h2>Advanced Search</h2>
+        <hr color="black">
+    </header>
+    <h3>Find pages with...</h3>
+    <h5>all these words: </h5>
+    <h5>this exact word or phrase: </h5>
+    <h5>any of these words: </h5>
+    <h5>non of these words: </h5>
     <form action="https://www.google.com/search">
-        <input id="search" type="text" name="q">
-        <input id="submit" type="submit" value="Google Search">
+        <input class="search" id="search1" type="text" name="q">
+        <input class="search" id="search2" type="text" name="q">
+        <input class="search" id="search3" type="text" name="q">
+        <input class="search" id="search4" type="text" name="q">
+        <input id="submit1" type="submit" value="Advanced Search">
     </form>
-    <a href="image_search.html">Image Search</a>
-    <a href="search.html">Regular Search</a>
 </body>
 </html>
